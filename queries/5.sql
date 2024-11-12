@@ -1,9 +1,9 @@
 # 5. Nombre de los constructores con los que han disputado
 # carreras más de 50 pilotos diferentes.
 
-select name
-from constructors c
-where constructorId in (select constructorId
-                        from results re
-                        group by constructorId
-                        having count(distinct driverId) > 50);
+SELECT name
+FROM constructors c
+WHERE constructorId IN (SELECT constructorId
+                        FROM results re
+                        GROUP BY constructorId
+                        HAVING COUNT(DISTINCT driverId) > 50);
