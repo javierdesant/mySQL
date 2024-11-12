@@ -11,3 +11,13 @@ WHERE driverId IN (SELECT driverId
                    HAVING COUNT(DISTINCT r.raceId) = (SELECT COUNT(*)
                                                       FROM races
                                                       WHERE year = 2017));
+
+SELECT forename, surname
+FROM drivers d
+WHERE NOT EXISTS(SELECT driverId
+                 FROM races r
+                 WHERE year = 2017
+                   AND NOT EXISTS(SELECT *
+                                  FROM results re
+                                  WHERE re.raceId = r.raceId
+                                    AND re.driverId = d.driverId));
