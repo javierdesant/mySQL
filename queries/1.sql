@@ -2,4 +2,4 @@
 
 select forename, surname
 from drivers
-where nationality = 'spanish'
+where nationality = 'spanish';
