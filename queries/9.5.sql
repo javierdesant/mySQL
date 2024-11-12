@@ -1,4 +1,4 @@
-# 9.5 Contar los constructores que no han participado
+# 9.5. Contar los constructores que no han participado
 # en alguna clasificación.
 
 SELECT COUNT(*) AS constructors
