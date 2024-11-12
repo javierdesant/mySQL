@@ -1,4 +1,4 @@
-# 5.5 Nombre de los constructores con los que han disputado
+# 5.5. Nombre de los constructores con los que han disputado
 # carreras más de 50 pilotos diferentes.
 # (Mostrando también el número de pilotos)
 
