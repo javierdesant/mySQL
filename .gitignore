@@ -1,2 +1,6 @@
 # Secrets
 db_root_password.txt
+
+node_modules/
+package.json
+package-lock.json
