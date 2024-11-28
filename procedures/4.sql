@@ -6,7 +6,7 @@ DELIMITER $$
 CREATE PROCEDURE getPodiumChampion(IN year int)
 BEGIN
 
-    SELECT DISTINCT forename, surname
+    SELECT DISTINCT surname, forename
     FROM results re
              JOIN races r ON re.raceId = r.raceId
              JOIN drivers d ON re.driverId = d.driverId
