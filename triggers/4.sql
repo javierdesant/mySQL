@@ -40,7 +40,6 @@ VALUES
     (6, 'Tag Heuer', 990, 4500000),
     (7, 'Adidas', 7, 800000);
 
-
 SELECT *
 FROM sponsors;
 
